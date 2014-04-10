@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84247DDD18F6A3ED00370176 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84247DDC18F6A3ED00370176 /* Foundation.framework */; };
+		84247DDF18F6A3ED00370176 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84247DDE18F6A3ED00370176 /* CoreGraphics.framework */; };
+		84247DE118F6A3ED00370176 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84247DE018F6A3ED00370176 /* UIKit.framework */; };
+		84247DE718F6A3ED00370176 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84247DE518F6A3ED00370176 /* InfoPlist.strings */; };
+		84247DE918F6A3ED00370176 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84247DE818F6A3ED00370176 /* main.m */; };
+		84247DED18F6A3ED00370176 /* CRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84247DEC18F6A3ED00370176 /* CRAppDelegate.m */; };
+		84247DF018F6A3ED00370176 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84247DEE18F6A3ED00370176 /* Main.storyboard */; };
+		84247DF318F6A3ED00370176 /* CRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84247DF218F6A3ED00370176 /* CRViewController.m */; };
+		84247DF518F6A3ED00370176 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84247DF418F6A3ED00370176 /* Images.xcassets */; };
+		84247DFC18F6A3ED00370176 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84247DFB18F6A3ED00370176 /* XCTest.framework */; };
+		84247DFD18F6A3ED00370176 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84247DDC18F6A3ED00370176 /* Foundation.framework */; };
+		84247DFE18F6A3ED00370176 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84247DE018F6A3ED00370176 /* UIKit.framework */; };
+		84247E0618F6A3ED00370176 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84247E0418F6A3ED00370176 /* InfoPlist.strings */; };
+		84247E0818F6A3ED00370176 /* Claim_ReporterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84247E0718F6A3ED00370176 /* Claim_ReporterTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84247DFF18F6A3ED00370176 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84247DD118F6A3ED00370176 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84247DD818F6A3ED00370176;
+			remoteInfo = "Claim Reporter";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		84247DD918F6A3ED00370176 /* Claim Reporter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Claim Reporter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84247DDC18F6A3ED00370176 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		84247DDE18F6A3ED00370176 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		84247DE018F6A3ED00370176 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		84247DE418F6A3ED00370176 /* Claim Reporter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Claim Reporter-Info.plist"; sourceTree = "<group>"; };
+		84247DE618F6A3ED00370176 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		84247DE818F6A3ED00370176 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84247DEA18F6A3ED00370176 /* Claim Reporter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Claim Reporter-Prefix.pch"; sourceTree = "<group>"; };
+		84247DEB18F6A3ED00370176 /* CRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRAppDelegate.h; sourceTree = "<group>"; };
+		84247DEC18F6A3ED00370176 /* CRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRAppDelegate.m; sourceTree = "<group>"; };
+		84247DEF18F6A3ED00370176 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84247DF118F6A3ED00370176 /* CRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRViewController.h; sourceTree = "<group>"; };
+		84247DF218F6A3ED00370176 /* CRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRViewController.m; sourceTree = "<group>"; };
+		84247DF418F6A3ED00370176 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		84247DFA18F6A3ED00370176 /* Claim ReporterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Claim ReporterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84247DFB18F6A3ED00370176 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		84247E0318F6A3ED00370176 /* Claim ReporterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Claim ReporterTests-Info.plist"; sourceTree = "<group>"; };
+		84247E0518F6A3ED00370176 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		84247E0718F6A3ED00370176 /* Claim_ReporterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Claim_ReporterTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84247DD618F6A3ED00370176 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84247DDF18F6A3ED00370176 /* CoreGraphics.framework in Frameworks */,
+				84247DE118F6A3ED00370176 /* UIKit.framework in Frameworks */,
+				84247DDD18F6A3ED00370176 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84247DF718F6A3ED00370176 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84247DFC18F6A3ED00370176 /* XCTest.framework in Frameworks */,
+				84247DFE18F6A3ED00370176 /* UIKit.framework in Frameworks */,
+				84247DFD18F6A3ED00370176 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84247DD018F6A3ED00370176 = {
+			isa = PBXGroup;
+			children = (
+				84247DE218F6A3ED00370176 /* Claim Reporter */,
+				84247E0118F6A3ED00370176 /* Claim ReporterTests */,
+				84247DDB18F6A3ED00370176 /* Frameworks */,
+				84247DDA18F6A3ED00370176 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84247DDA18F6A3ED00370176 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84247DD918F6A3ED00370176 /* Claim Reporter.app */,
+				84247DFA18F6A3ED00370176 /* Claim ReporterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84247DDB18F6A3ED00370176 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84247DDC18F6A3ED00370176 /* Foundation.framework */,
+				84247DDE18F6A3ED00370176 /* CoreGraphics.framework */,
+				84247DE018F6A3ED00370176 /* UIKit.framework */,
+				84247DFB18F6A3ED00370176 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84247DE218F6A3ED00370176 /* Claim Reporter */ = {
+			isa = PBXGroup;
+			children = (
+				84247DEB18F6A3ED00370176 /* CRAppDelegate.h */,
+				84247DEC18F6A3ED00370176 /* CRAppDelegate.m */,
+				84247DEE18F6A3ED00370176 /* Main.storyboard */,
+				84247DF118F6A3ED00370176 /* CRViewController.h */,
+				84247DF218F6A3ED00370176 /* CRViewController.m */,
+				84247DF418F6A3ED00370176 /* Images.xcassets */,
+				84247DE318F6A3ED00370176 /* Supporting Files */,
+			);
+			path = "Claim Reporter";
+			sourceTree = "<group>";
+		};
+		84247DE318F6A3ED00370176 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84247DE418F6A3ED00370176 /* Claim Reporter-Info.plist */,
+				84247DE518F6A3ED00370176 /* InfoPlist.strings */,
+				84247DE818F6A3ED00370176 /* main.m */,
+				84247DEA18F6A3ED00370176 /* Claim Reporter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84247E0118F6A3ED00370176 /* Claim ReporterTests */ = {
+			isa = PBXGroup;
+			children = (
+				84247E0718F6A3ED00370176 /* Claim_ReporterTests.m */,
+				84247E0218F6A3ED00370176 /* Supporting Files */,
+			);
+			path = "Claim ReporterTests";
+			sourceTree = "<group>";
+		};
+		84247E0218F6A3ED00370176 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84247E0318F6A3ED00370176 /* Claim ReporterTests-Info.plist */,
+				84247E0418F6A3ED00370176 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84247DD818F6A3ED00370176 /* Claim Reporter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84247E0B18F6A3ED00370176 /* Build configuration list for PBXNativeTarget "Claim Reporter" */;
+			buildPhases = (
+				84247DD518F6A3ED00370176 /* Sources */,
+				84247DD618F6A3ED00370176 /* Frameworks */,
+				84247DD718F6A3ED00370176 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Claim Reporter";
+			productName = "Claim Reporter";
+			productReference = 84247DD918F6A3ED00370176 /* Claim Reporter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84247DF918F6A3ED00370176 /* Claim ReporterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84247E0E18F6A3ED00370176 /* Build configuration list for PBXNativeTarget "Claim ReporterTests" */;
+			buildPhases = (
+				84247DF618F6A3ED00370176 /* Sources */,
+				84247DF718F6A3ED00370176 /* Frameworks */,
+				84247DF818F6A3ED00370176 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84247E0018F6A3ED00370176 /* PBXTargetDependency */,
+			);
+			name = "Claim ReporterTests";
+			productName = "Claim ReporterTests";
+			productReference = 84247DFA18F6A3ED00370176 /* Claim ReporterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84247DD118F6A3ED00370176 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CR;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = iDoodle;
+				TargetAttributes = {
+					84247DF918F6A3ED00370176 = {
+						TestTargetID = 84247DD818F6A3ED00370176;
+					};
+				};
+			};
+			buildConfigurationList = 84247DD418F6A3ED00370176 /* Build configuration list for PBXProject "Claim Reporter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84247DD018F6A3ED00370176;
+			productRefGroup = 84247DDA18F6A3ED00370176 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84247DD818F6A3ED00370176 /* Claim Reporter */,
+				84247DF918F6A3ED00370176 /* Claim ReporterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84247DD718F6A3ED00370176 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84247DF518F6A3ED00370176 /* Images.xcassets in Resources */,
+				84247DE718F6A3ED00370176 /* InfoPlist.strings in Resources */,
+				84247DF018F6A3ED00370176 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84247DF818F6A3ED00370176 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84247E0618F6A3ED00370176 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84247DD518F6A3ED00370176 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84247DE918F6A3ED00370176 /* main.m in Sources */,
+				84247DED18F6A3ED00370176 /* CRAppDelegate.m in Sources */,
+				84247DF318F6A3ED00370176 /* CRViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84247DF618F6A3ED00370176 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84247E0818F6A3ED00370176 /* Claim_ReporterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84247E0018F6A3ED00370176 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84247DD818F6A3ED00370176 /* Claim Reporter */;
+			targetProxy = 84247DFF18F6A3ED00370176 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84247DE518F6A3ED00370176 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84247DE618F6A3ED00370176 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		84247DEE18F6A3ED00370176 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84247DEF18F6A3ED00370176 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84247E0418F6A3ED00370176 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84247E0518F6A3ED00370176 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84247E0918F6A3ED00370176 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		84247E0A18F6A3ED00370176 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84247E0C18F6A3ED00370176 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Claim Reporter/Claim Reporter-Prefix.pch";
+				INFOPLIST_FILE = "Claim Reporter/Claim Reporter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		84247E0D18F6A3ED00370176 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Claim Reporter/Claim Reporter-Prefix.pch";
+				INFOPLIST_FILE = "Claim Reporter/Claim Reporter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		84247E0F18F6A3ED00370176 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Claim Reporter.app/Claim Reporter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Claim Reporter/Claim Reporter-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Claim ReporterTests/Claim ReporterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		84247E1018F6A3ED00370176 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Claim Reporter.app/Claim Reporter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Claim Reporter/Claim Reporter-Prefix.pch";
+				INFOPLIST_FILE = "Claim ReporterTests/Claim ReporterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84247DD418F6A3ED00370176 /* Build configuration list for PBXProject "Claim Reporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84247E0918F6A3ED00370176 /* Debug */,
+				84247E0A18F6A3ED00370176 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84247E0B18F6A3ED00370176 /* Build configuration list for PBXNativeTarget "Claim Reporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84247E0C18F6A3ED00370176 /* Debug */,
+				84247E0D18F6A3ED00370176 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		84247E0E18F6A3ED00370176 /* Build configuration list for PBXNativeTarget "Claim ReporterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84247E0F18F6A3ED00370176 /* Debug */,
+				84247E1018F6A3ED00370176 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84247DD118F6A3ED00370176 /* Project object */;
+}
