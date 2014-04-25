@@ -14,13 +14,24 @@
 		84247DE918F6A3ED00370176 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84247DE818F6A3ED00370176 /* main.m */; };
 		84247DED18F6A3ED00370176 /* CRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84247DEC18F6A3ED00370176 /* CRAppDelegate.m */; };
 		84247DF018F6A3ED00370176 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84247DEE18F6A3ED00370176 /* Main.storyboard */; };
-		84247DF318F6A3ED00370176 /* CRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84247DF218F6A3ED00370176 /* CRViewController.m */; };
 		84247DF518F6A3ED00370176 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84247DF418F6A3ED00370176 /* Images.xcassets */; };
 		84247DFC18F6A3ED00370176 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84247DFB18F6A3ED00370176 /* XCTest.framework */; };
 		84247DFD18F6A3ED00370176 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84247DDC18F6A3ED00370176 /* Foundation.framework */; };
 		84247DFE18F6A3ED00370176 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84247DE018F6A3ED00370176 /* UIKit.framework */; };
 		84247E0618F6A3ED00370176 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84247E0418F6A3ED00370176 /* InfoPlist.strings */; };
 		84247E0818F6A3ED00370176 /* Claim_ReporterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84247E0718F6A3ED00370176 /* Claim_ReporterTests.m */; };
+		84A4C3621900BAAF00686832 /* CRMenuDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A4C3611900BAAF00686832 /* CRMenuDrawerViewController.m */; };
+		84A4C3651900C5C300686832 /* CRMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A4C3641900C5C300686832 /* CRMenuViewController.m */; };
+		84A4C3681900E62800686832 /* CRTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A4C3671900E62800686832 /* CRTextViewController.m */; };
+		84A4C36B1900E63A00686832 /* CRImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A4C36A1900E63A00686832 /* CRImageViewController.m */; };
+		84A4C3701900E8E300686832 /* CRDisplayContentSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A4C36F1900E8E300686832 /* CRDisplayContentSegue.m */; };
+		84A4C377190156D100686832 /* menu-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A4C376190156D100686832 /* menu-25.png */; };
+		84A4C37B190157DA00686832 /* CRButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A4C37A190157DA00686832 /* CRButtonHandler.m */; };
+		84A4C37D19015F0D00686832 /* Music__039743_.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84A4C37C19015F0D00686832 /* Music__039743_.jpg */; };
+		84A4C37F1901609400686832 /* frusciante.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84A4C37E1901609400686832 /* frusciante.jpg */; };
+		84A4C3851902215100686832 /* ami-mobile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84A4C3841902215100686832 /* ami-mobile.jpg */; };
+		84CFB83B19031FCC003AB05C /* CRNewClaimTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CFB83A19031FCC003AB05C /* CRNewClaimTableViewController.m */; };
+		84DF113D1909FC9A0005E7BD /* CRBarcodeScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DF113C1909FC9A0005E7BD /* CRBarcodeScannerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +56,32 @@
 		84247DEB18F6A3ED00370176 /* CRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRAppDelegate.h; sourceTree = "<group>"; };
 		84247DEC18F6A3ED00370176 /* CRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRAppDelegate.m; sourceTree = "<group>"; };
 		84247DEF18F6A3ED00370176 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		84247DF118F6A3ED00370176 /* CRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRViewController.h; sourceTree = "<group>"; };
-		84247DF218F6A3ED00370176 /* CRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRViewController.m; sourceTree = "<group>"; };
 		84247DF418F6A3ED00370176 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		84247DFA18F6A3ED00370176 /* Claim ReporterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Claim ReporterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84247DFB18F6A3ED00370176 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		84247E0318F6A3ED00370176 /* Claim ReporterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Claim ReporterTests-Info.plist"; sourceTree = "<group>"; };
 		84247E0518F6A3ED00370176 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		84247E0718F6A3ED00370176 /* Claim_ReporterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Claim_ReporterTests.m; sourceTree = "<group>"; };
+		84A4C3601900BAAF00686832 /* CRMenuDrawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRMenuDrawerViewController.h; sourceTree = "<group>"; };
+		84A4C3611900BAAF00686832 /* CRMenuDrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRMenuDrawerViewController.m; sourceTree = "<group>"; };
+		84A4C3631900C5C300686832 /* CRMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRMenuViewController.h; sourceTree = "<group>"; };
+		84A4C3641900C5C300686832 /* CRMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRMenuViewController.m; sourceTree = "<group>"; };
+		84A4C3661900E62800686832 /* CRTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRTextViewController.h; sourceTree = "<group>"; };
+		84A4C3671900E62800686832 /* CRTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRTextViewController.m; sourceTree = "<group>"; };
+		84A4C3691900E63A00686832 /* CRImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRImageViewController.h; sourceTree = "<group>"; };
+		84A4C36A1900E63A00686832 /* CRImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRImageViewController.m; sourceTree = "<group>"; };
+		84A4C36E1900E8E300686832 /* CRDisplayContentSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRDisplayContentSegue.h; sourceTree = "<group>"; };
+		84A4C36F1900E8E300686832 /* CRDisplayContentSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRDisplayContentSegue.m; sourceTree = "<group>"; };
+		84A4C376190156D100686832 /* menu-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu-25.png"; path = "../../Tick-it/WhoDunnit/menu-25.png"; sourceTree = "<group>"; };
+		84A4C379190157DA00686832 /* CRButtonHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRButtonHandler.h; sourceTree = "<group>"; };
+		84A4C37A190157DA00686832 /* CRButtonHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRButtonHandler.m; sourceTree = "<group>"; };
+		84A4C37C19015F0D00686832 /* Music__039743_.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Music__039743_.jpg; sourceTree = "<group>"; };
+		84A4C37E1901609400686832 /* frusciante.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frusciante.jpg; sourceTree = "<group>"; };
+		84A4C3841902215100686832 /* ami-mobile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ami-mobile.jpg"; sourceTree = "<group>"; };
+		84CFB83919031FCC003AB05C /* CRNewClaimTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRNewClaimTableViewController.h; sourceTree = "<group>"; };
+		84CFB83A19031FCC003AB05C /* CRNewClaimTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRNewClaimTableViewController.m; sourceTree = "<group>"; };
+		84DF113B1909FC9A0005E7BD /* CRBarcodeScannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRBarcodeScannerViewController.h; sourceTree = "<group>"; };
+		84DF113C1909FC9A0005E7BD /* CRBarcodeScannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRBarcodeScannerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +144,11 @@
 				84247DEB18F6A3ED00370176 /* CRAppDelegate.h */,
 				84247DEC18F6A3ED00370176 /* CRAppDelegate.m */,
 				84247DEE18F6A3ED00370176 /* Main.storyboard */,
-				84247DF118F6A3ED00370176 /* CRViewController.h */,
-				84247DF218F6A3ED00370176 /* CRViewController.m */,
+				84DF1141190A00520005E7BD /* Menu Control */,
+				84DF113E190A00150005E7BD /* Login */,
+				84DF1140190A00380005E7BD /* New Claim */,
+				84DF113F190A00260005E7BD /* Sample Image */,
+				84A4C3781901574E00686832 /* Images */,
 				84247DF418F6A3ED00370176 /* Images.xcassets */,
 				84247DE318F6A3ED00370176 /* Supporting Files */,
 			);
@@ -150,6 +182,61 @@
 				84247E0418F6A3ED00370176 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84A4C3781901574E00686832 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				84A4C3841902215100686832 /* ami-mobile.jpg */,
+				84A4C37C19015F0D00686832 /* Music__039743_.jpg */,
+				84A4C37E1901609400686832 /* frusciante.jpg */,
+				84A4C376190156D100686832 /* menu-25.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		84DF113E190A00150005E7BD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				84A4C3661900E62800686832 /* CRTextViewController.h */,
+				84A4C3671900E62800686832 /* CRTextViewController.m */,
+				84DF113B1909FC9A0005E7BD /* CRBarcodeScannerViewController.h */,
+				84DF113C1909FC9A0005E7BD /* CRBarcodeScannerViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		84DF113F190A00260005E7BD /* Sample Image */ = {
+			isa = PBXGroup;
+			children = (
+				84A4C3691900E63A00686832 /* CRImageViewController.h */,
+				84A4C36A1900E63A00686832 /* CRImageViewController.m */,
+			);
+			name = "Sample Image";
+			sourceTree = "<group>";
+		};
+		84DF1140190A00380005E7BD /* New Claim */ = {
+			isa = PBXGroup;
+			children = (
+				84CFB83919031FCC003AB05C /* CRNewClaimTableViewController.h */,
+				84CFB83A19031FCC003AB05C /* CRNewClaimTableViewController.m */,
+			);
+			name = "New Claim";
+			sourceTree = "<group>";
+		};
+		84DF1141190A00520005E7BD /* Menu Control */ = {
+			isa = PBXGroup;
+			children = (
+				84A4C3601900BAAF00686832 /* CRMenuDrawerViewController.h */,
+				84A4C3611900BAAF00686832 /* CRMenuDrawerViewController.m */,
+				84A4C3631900C5C300686832 /* CRMenuViewController.h */,
+				84A4C3641900C5C300686832 /* CRMenuViewController.m */,
+				84A4C36E1900E8E300686832 /* CRDisplayContentSegue.h */,
+				84A4C36F1900E8E300686832 /* CRDisplayContentSegue.m */,
+				84A4C379190157DA00686832 /* CRButtonHandler.h */,
+				84A4C37A190157DA00686832 /* CRButtonHandler.m */,
+			);
+			name = "Menu Control";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +287,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = iDoodle;
 				TargetAttributes = {
+					84247DD818F6A3ED00370176 = {
+						DevelopmentTeam = 3REQJATS35;
+					};
 					84247DF918F6A3ED00370176 = {
 						TestTargetID = 84247DD818F6A3ED00370176;
 					};
@@ -230,8 +320,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				84247DF518F6A3ED00370176 /* Images.xcassets in Resources */,
+				84A4C37F1901609400686832 /* frusciante.jpg in Resources */,
 				84247DE718F6A3ED00370176 /* InfoPlist.strings in Resources */,
+				84A4C3851902215100686832 /* ami-mobile.jpg in Resources */,
+				84A4C37D19015F0D00686832 /* Music__039743_.jpg in Resources */,
 				84247DF018F6A3ED00370176 /* Main.storyboard in Resources */,
+				84A4C377190156D100686832 /* menu-25.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,9 +344,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84DF113D1909FC9A0005E7BD /* CRBarcodeScannerViewController.m in Sources */,
+				84A4C3621900BAAF00686832 /* CRMenuDrawerViewController.m in Sources */,
+				84A4C36B1900E63A00686832 /* CRImageViewController.m in Sources */,
 				84247DE918F6A3ED00370176 /* main.m in Sources */,
+				84A4C37B190157DA00686832 /* CRButtonHandler.m in Sources */,
+				84CFB83B19031FCC003AB05C /* CRNewClaimTableViewController.m in Sources */,
+				84A4C3701900E8E300686832 /* CRDisplayContentSegue.m in Sources */,
+				84A4C3651900C5C300686832 /* CRMenuViewController.m in Sources */,
+				84A4C3681900E62800686832 /* CRTextViewController.m in Sources */,
 				84247DED18F6A3ED00370176 /* CRAppDelegate.m in Sources */,
-				84247DF318F6A3ED00370176 /* CRViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +478,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Claim Reporter/Claim Reporter-Prefix.pch";
 				INFOPLIST_FILE = "Claim Reporter/Claim Reporter-Info.plist";
@@ -390,6 +492,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Claim Reporter/Claim Reporter-Prefix.pch";
 				INFOPLIST_FILE = "Claim Reporter/Claim Reporter-Info.plist";
@@ -457,6 +560,7 @@
 				84247E0D18F6A3ED00370176 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84247E0E18F6A3ED00370176 /* Build configuration list for PBXNativeTarget "Claim ReporterTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +569,7 @@
 				84247E1018F6A3ED00370176 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
