@@ -9,9 +9,10 @@
 #import "CRBarcodeScannerViewController.h"
 @import AVFoundation;
 
-@interface CRBarcodeScannerViewController () <AVCaptureMetadataOutputObjectsDelegate>
+@interface CRBarcodeScannerViewController () <AVCaptureMetadataOutputObjectsDelegate, UIAlertViewDelegate>
 
-@property (strong, nonatomic) AVCaptureSession *session;
+@property (strong, nonatomic) AVCaptureSession *captureSession;
+@property (strong, nonatomic) NSString *QRCode;
 
 @end
 
@@ -29,7 +30,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     [self scan];
 }
 
@@ -41,53 +41,73 @@
 
 - (void)scan
 {
-    self.session = [[AVCaptureSession alloc] init];
+    self.captureSession = [[AVCaptureSession alloc] init];
     AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
     NSError *error = nil;
     
     AVCaptureDeviceInput *input = [AVCaptureDeviceInput deviceInputWithDevice:device error:&error];
     
     if (input) {
-        [self.session addInput:input];
+        [self.captureSession addInput:input];
     } else {
         NSLog(@"Error: %@", error);
     }
     
     AVCaptureMetadataOutput *output = [[AVCaptureMetadataOutput alloc] init];
     [output setMetadataObjectsDelegate:self queue:dispatch_get_main_queue()];
-    [self.session addOutput:output];
+    [self.captureSession addOutput:output];
     [output setMetadataObjectTypes:@[AVMetadataObjectTypeQRCode]];
     
-    
-    AVCaptureVideoPreviewLayer *previewLayer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:self.session];
+    AVCaptureVideoPreviewLayer *previewLayer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:self.captureSession];
     previewLayer.frame = self.view.layer.bounds;
     [self.view.layer addSublayer:previewLayer];
     
+    [self.captureSession startRunning];
     
-    [self.session startRunning];
+    [self performSelector:@selector(QRCodeNotFound) withObject:nil afterDelay:3.0];
+}
+
+- (void) QRCodeNotFound
+{
+    [self.captureSession stopRunning];
+    
+    if (!self.QRCode) {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"QR Code Not Found" message:@"" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alertView show];
+    }
+}
+
+
+#pragma mark - UIAlertViewDelegate
+-(void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+   
 }
 
 #pragma mark - AVCaptureMetadataOutputObjectsDelegate
 
 - (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputMetadataObjects:(NSArray *)metadataObjects fromConnection:(AVCaptureConnection *)connection
 {
-    NSString *QRCode = nil;
+    self.QRCode = nil;
     for (AVMetadataObject *metadata in metadataObjects) {
         if ([metadata.type isEqualToString:AVMetadataObjectTypeQRCode]) {
-            QRCode = [(AVMetadataMachineReadableCodeObject *)metadata stringValue];
+            self.QRCode = [(AVMetadataMachineReadableCodeObject *)metadata stringValue];
             break;
         }
     }
 
-    [self.session stopRunning];
+    [self.captureSession stopRunning];
 
-    if (!QRCode) {
+    if (!self.QRCode) {
         NSLog(@"Unable to scan QR code");
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"QR Code could not be scanned" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alertView show];
     }
     else
     {
-        NSLog(@"QR Code: %@", QRCode);
-        [self parseQRCode:QRCode];
+        NSLog(@"QR Code: %@", self.QRCode);
+        [self parseQRCode:self.QRCode];
     }
     [self dismissViewControllerAnimated:YES completion:nil];
 }

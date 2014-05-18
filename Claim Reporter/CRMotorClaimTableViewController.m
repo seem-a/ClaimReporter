@@ -1,19 +1,25 @@
 //
-//  CRNewClaimTableViewController.m
+//  CRMotorClaimTableViewController.m
 //  Claim Reporter
 //
-//  Created by Seema on 20/04/14.
+//  Created by Seema on 26/04/14.
 //  Copyright (c) 2014 iDoodle. All rights reserved.
 //
 
-#import "CRNewClaimTableViewController.h"
+#import "CRMotorClaimTableViewController.h"
 #import "CRLocationViewController.h"
+#define MOTOR_NEW_CLAIM_LOCATION @"Motor New Claim Location"
+#define LOCATION @"Location"
 
-@interface CRNewClaimTableViewController ()
+
+
+@interface CRMotorClaimTableViewController () <CRLocationViewControllerDelegate>
+@property (strong, nonatomic) IBOutlet UITableViewCell *locationTableViewCell;
+
 
 @end
 
-@implementation CRNewClaimTableViewController
+@implementation CRMotorClaimTableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -33,6 +39,9 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    self.locationTableViewCell.detailTextLabel.text = [self getLocation];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -42,16 +51,17 @@
 }
 
 #pragma mark - Table view data source
-
 /*
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
+#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+#warning Incomplete method implementation.
     // Return the number of rows in the section.
     return 0;
 }
@@ -105,16 +115,41 @@
 }
 */
 
+
+
+#pragma mark - CRLocationViewControllerDelegate
+
+- (void)returnAddress:(NSString *)street suburb:(NSString *)suburb city:(NSString *)city
+{
+    NSString *location = [NSString stringWithFormat:@"%@, %@, %@", street, suburb, city];
+    [self saveLocation:location];
+    
+    self.locationTableViewCell.detailTextLabel.text = location;
+}
+
+- (void)saveLocation:(NSString *)location
+{
+    [[NSUserDefaults standardUserDefaults] setObject:@{LOCATION:location} forKey:MOTOR_NEW_CLAIM_LOCATION];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+- (NSString *)getLocation
+{
+    NSMutableDictionary *locationArray = [[[NSUserDefaults standardUserDefaults] objectForKey:MOTOR_NEW_CLAIM_LOCATION] mutableCopy];
+    NSString *location = locationArray[LOCATION];
+    
+    return location;
+}
 #pragma mark - Navigation
-/*
+
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"locationSegue"]) {
+        CRLocationViewController *locationVC = (CRLocationViewController *)segue.destinationViewController;
+        locationVC.delegate = self;
     }
 }
- */
 
 
 @end

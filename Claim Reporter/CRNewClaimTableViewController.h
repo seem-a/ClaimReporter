@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CRAddressViewController.h"
 
 @interface CRNewClaimTableViewController : UITableViewController
 

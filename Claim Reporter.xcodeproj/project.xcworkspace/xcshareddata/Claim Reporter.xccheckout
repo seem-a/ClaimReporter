@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>171EFE14-3BB2-4B28-AC6C-67B4011EBDE2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Claim Reporter</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CA04F16F-4EC1-4A93-A5A6-A6F859B2388D</key>
+		<string>https://github.com/seem-a/ClaimReporter.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Claim Reporter.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CA04F16F-4EC1-4A93-A5A6-A6F859B2388D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/seem-a/ClaimReporter.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CA04F16F-4EC1-4A93-A5A6-A6F859B2388D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CA04F16F-4EC1-4A93-A5A6-A6F859B2388D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Claim Reporter</string>
+		</dict>
+	</array>
+</dict>
+</plist>
