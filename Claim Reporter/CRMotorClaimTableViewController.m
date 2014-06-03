@@ -8,6 +8,7 @@
 
 #import "CRMotorClaimTableViewController.h"
 #import "CRLocationViewController.h"
+#import "CRPhotosCollectionViewController.h"
 #define MOTOR_NEW_CLAIM_LOCATION @"Motor New Claim Location"
 #define LOCATION @"Location"
 
@@ -148,6 +149,10 @@
     if ([segue.identifier isEqualToString:@"locationSegue"]) {
         CRLocationViewController *locationVC = (CRLocationViewController *)segue.destinationViewController;
         locationVC.delegate = self;
+    }
+    else if ([segue.identifier isEqualToString:@"photosSegue"]) {
+        CRPhotosCollectionViewController *photosVC = (CRPhotosCollectionViewController *)segue.destinationViewController;
+        photosVC.claimID = @"M0001";
     }
 }
 

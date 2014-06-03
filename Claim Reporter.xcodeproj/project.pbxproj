@@ -15,7 +15,6 @@
 		841F70801924D04E0061EF80 /* CRPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 841F707F1924D04E0061EF80 /* CRPhotoCollectionViewCell.m */; };
 		841F70831924E75E0061EF80 /* CRCoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 841F70821924E75E0061EF80 /* CRCoreDataHelper.m */; };
 		841F70851924EB140061EF80 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841F70841924EB140061EF80 /* CoreData.framework */; };
-		84239D851926C79000E1C832 /* Claim_Reporter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84239D831926C79000E1C832 /* Claim_Reporter.xcdatamodeld */; };
 		84247DDD18F6A3ED00370176 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84247DDC18F6A3ED00370176 /* Foundation.framework */; };
 		84247DDF18F6A3ED00370176 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84247DDE18F6A3ED00370176 /* CoreGraphics.framework */; };
 		84247DE118F6A3ED00370176 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84247DE018F6A3ED00370176 /* UIKit.framework */; };
@@ -29,7 +28,8 @@
 		84247DFE18F6A3ED00370176 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84247DE018F6A3ED00370176 /* UIKit.framework */; };
 		84247E0618F6A3ED00370176 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84247E0418F6A3ED00370176 /* InfoPlist.strings */; };
 		84247E0818F6A3ED00370176 /* Claim_ReporterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84247E0718F6A3ED00370176 /* Claim_ReporterTests.m */; };
-		84362242192895DE00A9E7FA /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 84362241192895DE00A9E7FA /* Photo.m */; };
+		843622A01929FE1300A9E7FA /* Claim-Reporter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8436229E1929FE1300A9E7FA /* Claim-Reporter.xcdatamodeld */; };
+		843622E7192B6B8700A9E7FA /* CRPhotoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843622E6192B6B8700A9E7FA /* CRPhotoDetailViewController.m */; };
 		84A4C3621900BAAF00686832 /* CRMenuDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A4C3611900BAAF00686832 /* CRMenuDrawerViewController.m */; };
 		84A4C3651900C5C300686832 /* CRMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A4C3641900C5C300686832 /* CRMenuViewController.m */; };
 		84A4C3681900E62800686832 /* CRTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A4C3671900E62800686832 /* CRTextViewController.m */; };
@@ -45,6 +45,8 @@
 		84A9C55A190B6AD000FF1B5B /* CRLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A9C559190B6AD000FF1B5B /* CRLocationViewController.m */; };
 		84CFB83B19031FCC003AB05C /* CRNewClaimTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CFB83A19031FCC003AB05C /* CRNewClaimTableViewController.m */; };
 		84DF113D1909FC9A0005E7BD /* CRBarcodeScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DF113C1909FC9A0005E7BD /* CRBarcodeScannerViewController.m */; };
+		84E7BD391931D8F100CA39CB /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E7BD381931D8F100CA39CB /* Photo.m */; };
+		84E7BD3C1931EA8B00CA39CB /* CRImageFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E7BD3B1931EA8B00CA39CB /* CRImageFileManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +73,6 @@
 		841F70811924E75E0061EF80 /* CRCoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CRCoreDataHelper.h; path = "Claim Reporter/CRCoreDataHelper.h"; sourceTree = "<group>"; };
 		841F70821924E75E0061EF80 /* CRCoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CRCoreDataHelper.m; path = "Claim Reporter/CRCoreDataHelper.m"; sourceTree = "<group>"; };
 		841F70841924EB140061EF80 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		84239D841926C79000E1C832 /* Claim_Reporter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Claim_Reporter.xcdatamodel; sourceTree = "<group>"; };
 		84247DD918F6A3ED00370176 /* Claim Reporter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Claim Reporter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84247DDC18F6A3ED00370176 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		84247DDE18F6A3ED00370176 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -89,9 +90,9 @@
 		84247E0318F6A3ED00370176 /* Claim ReporterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Claim ReporterTests-Info.plist"; sourceTree = "<group>"; };
 		84247E0518F6A3ED00370176 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		84247E0718F6A3ED00370176 /* Claim_ReporterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Claim_ReporterTests.m; sourceTree = "<group>"; };
-		84362240192895DE00A9E7FA /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
-		84362241192895DE00A9E7FA /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
-		843622431928B80000A9E7FA /* Claim_Reporter 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Claim_Reporter 2.xcdatamodel"; sourceTree = "<group>"; };
+		8436229F1929FE1300A9E7FA /* Claim-Reporter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Claim-Reporter.xcdatamodel"; sourceTree = "<group>"; };
+		843622E5192B6B8700A9E7FA /* CRPhotoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRPhotoDetailViewController.h; sourceTree = "<group>"; };
+		843622E6192B6B8700A9E7FA /* CRPhotoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRPhotoDetailViewController.m; sourceTree = "<group>"; };
 		84A4C3601900BAAF00686832 /* CRMenuDrawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRMenuDrawerViewController.h; sourceTree = "<group>"; };
 		84A4C3611900BAAF00686832 /* CRMenuDrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRMenuDrawerViewController.m; sourceTree = "<group>"; };
 		84A4C3631900C5C300686832 /* CRMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRMenuViewController.h; sourceTree = "<group>"; };
@@ -118,6 +119,10 @@
 		84CFB83A19031FCC003AB05C /* CRNewClaimTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRNewClaimTableViewController.m; sourceTree = "<group>"; };
 		84DF113B1909FC9A0005E7BD /* CRBarcodeScannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRBarcodeScannerViewController.h; sourceTree = "<group>"; };
 		84DF113C1909FC9A0005E7BD /* CRBarcodeScannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRBarcodeScannerViewController.m; sourceTree = "<group>"; };
+		84E7BD371931D8F100CA39CB /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Photo.h; path = "Claim Reporter/Photo.h"; sourceTree = "<group>"; };
+		84E7BD381931D8F100CA39CB /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Photo.m; path = "Claim Reporter/Photo.m"; sourceTree = "<group>"; };
+		84E7BD3A1931EA8B00CA39CB /* CRImageFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRImageFileManager.h; sourceTree = "<group>"; };
+		84E7BD3B1931EA8B00CA39CB /* CRImageFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRImageFileManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +171,10 @@
 				841F707519240FCE0061EF80 /* CRPhotosCollectionViewController.m */,
 				841F707E1924D04E0061EF80 /* CRPhotoCollectionViewCell.h */,
 				841F707F1924D04E0061EF80 /* CRPhotoCollectionViewCell.m */,
+				843622E5192B6B8700A9E7FA /* CRPhotoDetailViewController.h */,
+				843622E6192B6B8700A9E7FA /* CRPhotoDetailViewController.m */,
+				84E7BD3A1931EA8B00CA39CB /* CRImageFileManager.h */,
+				84E7BD3B1931EA8B00CA39CB /* CRImageFileManager.m */,
 			);
 			name = Photos;
 			sourceTree = "<group>";
@@ -173,11 +182,11 @@
 		84239D8619288BFA00E1C832 /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
-				84362240192895DE00A9E7FA /* Photo.h */,
-				84362241192895DE00A9E7FA /* Photo.m */,
-				84239D831926C79000E1C832 /* Claim_Reporter.xcdatamodeld */,
 				841F70811924E75E0061EF80 /* CRCoreDataHelper.h */,
 				841F70821924E75E0061EF80 /* CRCoreDataHelper.m */,
+				8436229E1929FE1300A9E7FA /* Claim-Reporter.xcdatamodeld */,
+				84E7BD371931D8F100CA39CB /* Photo.h */,
+				84E7BD381931D8F100CA39CB /* Photo.m */,
 			);
 			name = "Core Data";
 			path = ..;
@@ -442,22 +451,24 @@
 				841F70801924D04E0061EF80 /* CRPhotoCollectionViewCell.m in Sources */,
 				84DF113D1909FC9A0005E7BD /* CRBarcodeScannerViewController.m in Sources */,
 				84A9C557190B62DB00FF1B5B /* CRMotorClaimTableViewController.m in Sources */,
-				84362242192895DE00A9E7FA /* Photo.m in Sources */,
 				841F707619240FCE0061EF80 /* CRPhotosCollectionViewController.m in Sources */,
 				84A4C3621900BAAF00686832 /* CRMenuDrawerViewController.m in Sources */,
 				84A4C36B1900E63A00686832 /* CRImageViewController.m in Sources */,
 				84A9C55A190B6AD000FF1B5B /* CRLocationViewController.m in Sources */,
 				84247DE918F6A3ED00370176 /* main.m in Sources */,
+				84E7BD391931D8F100CA39CB /* Photo.m in Sources */,
 				84A9C550190B0F8000FF1B5B /* CRDocumentGenerator.m in Sources */,
 				84A4C37B190157DA00686832 /* CRButtonHandler.m in Sources */,
 				8406533A191A029F0072E483 /* CRAddressViewController.m in Sources */,
+				843622A01929FE1300A9E7FA /* Claim-Reporter.xcdatamodeld in Sources */,
+				843622E7192B6B8700A9E7FA /* CRPhotoDetailViewController.m in Sources */,
 				84CFB83B19031FCC003AB05C /* CRNewClaimTableViewController.m in Sources */,
 				84A4C3701900E8E300686832 /* CRDisplayContentSegue.m in Sources */,
-				84239D851926C79000E1C832 /* Claim_Reporter.xcdatamodeld in Sources */,
 				84A4C3651900C5C300686832 /* CRMenuViewController.m in Sources */,
 				84A4C3681900E62800686832 /* CRTextViewController.m in Sources */,
 				841F70831924E75E0061EF80 /* CRCoreDataHelper.m in Sources */,
 				84247DED18F6A3ED00370176 /* CRAppDelegate.m in Sources */,
+				84E7BD3C1931EA8B00CA39CB /* CRImageFileManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -678,15 +689,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		84239D831926C79000E1C832 /* Claim_Reporter.xcdatamodeld */ = {
+		8436229E1929FE1300A9E7FA /* Claim-Reporter.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				843622431928B80000A9E7FA /* Claim_Reporter 2.xcdatamodel */,
-				84239D841926C79000E1C832 /* Claim_Reporter.xcdatamodel */,
+				8436229F1929FE1300A9E7FA /* Claim-Reporter.xcdatamodel */,
 			);
-			currentVersion = 84239D841926C79000E1C832 /* Claim_Reporter.xcdatamodel */;
-			name = Claim_Reporter.xcdatamodeld;
-			path = "Claim Reporter/Claim_Reporter.xcdatamodeld";
+			currentVersion = 8436229F1929FE1300A9E7FA /* Claim-Reporter.xcdatamodel */;
+			name = "Claim-Reporter.xcdatamodeld";
+			path = "Claim Reporter/Claim-Reporter.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
